@@ -19,5 +19,44 @@
 *.tar.gz
 *.rar
 
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+*.db
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*-e
+*Backup
+/target/*
+target/*
+
+# Misc Files #
+##############
+dep.txt
+.classpath
+.project
+.settings/*
+
+*.iml
+.idea/
+*.iml
+.idea/
+.mvn/
+mvnw.cmd
+mvnw
+HELP.md
+/target/
+/bin/
+
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
