@@ -1,5 +1,6 @@
-package com.tracker.LastSeen;
+package com.tracker.LastSeen.config;
 
+import com.tracker.LastSeen.config.LastSeenApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
