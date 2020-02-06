@@ -1,4 +1,4 @@
-package com.tracker.LastSeen.serviceImpl;
+package com.tracker.LastSeen.service.impl;
 
 import com.tracker.LastSeen.service.LastSeenCalculatorService;
 import org.springframework.stereotype.Service;
