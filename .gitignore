@@ -19,13 +19,6 @@
 *.tar.gz
 *.rar
 
-# Logs and databases #
-######################
-*.log
-*.sql
-*.sqlite
-*.db
-
 # OS generated files #
 ######################
 .DS_Store
