@@ -21,7 +21,7 @@ public class LastSeenCalculatorServiceImpl implements LastSeenCalculatorService 
 
             long diff = d2.getTime() - d1.getTime();
             if (diff < 0) {
-                return LastSeenConstants.INVALID_TIME;
+                throw new IllegalArgumentException();
             }
 //            System.out.println("Difference between  " + d1 + " and " + d2 + " is "
 //                    + (diff / (1000 * 60 * 60 * 24)) + " days.");
@@ -47,6 +47,6 @@ public class LastSeenCalculatorServiceImpl implements LastSeenCalculatorService 
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return null;
+        return LastSeenConstants.INVALID_TIME;
     }
 }
