@@ -14,7 +14,7 @@ public class LastSeenController {
     private LastSeenCalculatorService lastSeenCalculatorService;
 
     @RequestMapping(value = "/last-seen", method = RequestMethod.GET)
-    public String getLastSeen (@RequestParam(required = true) String dateStart) {
-        return lastSeenCalculatorService.calculateDaysDifference(dateStart);
+    public String getLastSeen (@RequestParam(required = true) String lastSeenDateTime) {
+        return lastSeenCalculatorService.calculateDaysDifference(lastSeenDateTime);
     }
 }

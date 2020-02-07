@@ -12,11 +12,11 @@ import java.util.Date;
 @Service
 public class LastSeenCalculatorServiceImpl implements LastSeenCalculatorService {
     @Override
-    public String calculateDaysDifference(String dateStart) {
+    public String calculateDaysDifference(String lastSeenDateTime) {
         int minutes = 0, hours = 0, days = 0, months = 0, years = 0;
         String dateNow = new SimpleDateFormat(LastSeenConstants.DATE_FORMAT_PATTERN).format(new Date());
         try {
-            Date d1 = new SimpleDateFormat(LastSeenConstants.DATE_FORMAT_PATTERN).parse(dateStart);
+            Date d1 = new SimpleDateFormat(LastSeenConstants.DATE_FORMAT_PATTERN).parse(lastSeenDateTime);
             Date d2 = new SimpleDateFormat(LastSeenConstants.DATE_FORMAT_PATTERN).parse(dateNow);
 
             long diff = d2.getTime() - d1.getTime();
